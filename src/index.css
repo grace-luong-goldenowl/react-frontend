@@ -27,8 +27,9 @@ a:hover {
 }
 
 body {
+  width: 100%;
+  height: auto;
   margin: 0;
-  place-items: center;
 }
 
 h1 {
