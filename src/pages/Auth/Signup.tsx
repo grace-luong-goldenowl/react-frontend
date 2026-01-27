@@ -3,9 +3,7 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import { useFormik } from 'formik';
 
 const SignupSchema = Yup.object().shape({
-  username: Yup.string()
-    .min(2, 'Too short!')
-    .required('Username is required! zzz'),
+  username: Yup.string().min(2, 'Too short!').required('Username is required!'),
   password: Yup.string().min(8, 'At least 8 characters'),
   firstName: Yup.string()
     .min(2, 'Too Short!')
@@ -34,7 +32,7 @@ export const Signup = () => {
   });
   return (
     <div style={{ minWidth: 800 }}>
-      <h1>Signup</h1>
+      <h1 style={{ textAlign: 'center' }}>Signup</h1>
       <Form
         name="basic"
         labelCol={{ span: 8 }}
